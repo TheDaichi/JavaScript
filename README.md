@@ -427,5 +427,27 @@ console.log(c.value);
 
 In the above example `a` and `b` are the same object, so changing `a` results in a change to `b` as well. However setting `a` to a new object disconnects it from the object that is assigned to `b`.
 
+This is a welcome and popular shorthand. Before this shorthand was introduced, it was common to see code that looks like this:
+```javascript
+let name = 'Jane';
+let age = 27;
 
+let obj = {
+    name: name,
+    age: age
+};
+```
+This might be confusing, but remember that when you are creating an object, you are coming up with property names on the left side of the :, and you are specifying property values on the right side. This code looks strange because we are using the same words, but that is only because we are using variables with the same name as the property values.
 
+Essentially, we are saying "Create an object with two properties named name and age. For the name property, I would like to use the current value of the name variable. For the age property, I would like to use the current value of the age variable.
+
+Some consider this verbose, others find it difficult to read. Luckily, we now have a shorthand syntax to use when we are creating an object and setting property names that are the same name as the variables we are accessing for values.
+```javascript
+let name = 'Jane';
+let age = 27;
+
+let obj = {
+    name,
+    age
+};
+```
