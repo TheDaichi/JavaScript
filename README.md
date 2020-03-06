@@ -437,7 +437,7 @@ let obj = {
     age: age
 };
 ```
-This might be confusing, but remember that when you are creating an object, you are coming up with property names on the left side of the :, and you are specifying property values on the right side. This code looks strange because we are using the same words, but that is only because we are using variables with the same name as the property values.
+This might be confusing, but rememr that when you are creating an object, you are coming up with property names on the left side of the :, and you are specifying property values on the right side. This code looks strange because we are using the same words, but that is only because we are using variables with the same name as the property values.
 
 Essentially, we are saying "Create an object with two properties named name and age. For the name property, I would like to use the current value of the name variable. For the age property, I would like to use the current value of the age variable.
 
